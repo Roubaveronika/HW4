@@ -222,7 +222,7 @@ footer {
     .main-section .wrapper {
         flex-direction: column-reverse;
         align-items: flex-start;
-        gap: 60px;
+        gap: 80px;
         /* 📍 Свойства для расположения элементов и отступа между ними */
     }
 
@@ -244,7 +244,7 @@ footer {
 @media screen and (max-width: 768px) {
     .info-wrapper {
         flex-direction: column;
-        gap: 60px;
+        gap: 70px;
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
     }
 }
@@ -252,7 +252,7 @@ footer {
 /* Стили для адаптива под мобильные устройства */
 @media screen and (max-width: 576px) {
     .main-section {
-        padding: 30px 0; 60px}
+        padding: 30px 0 60px;}
         /* 📍 Внутренние отступы сверху и снизу */
     }
 
