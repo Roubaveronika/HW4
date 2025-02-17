@@ -91,8 +91,13 @@ select:hover,
     border-color: #2965f1;
 }
 
+.wrapper {
+    display: flex;
+    gap: 60px;
+}
 .info-wrapper {
     display: flex;
+    gap: 60px;
 }
 
 .section-title {
@@ -143,6 +148,8 @@ select:hover,
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     margin: 40px 0;
     align-items: flex-start;
     gap: 10px;
@@ -214,10 +221,13 @@ footer {
 @media screen and (max-width: 1200px) {
     .main-section {
         display: flex;
-        background: red;
         min-height: 100vh;
         padding-bottom: 100px;
         /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */
+    }
+    .about-section .wrapper,
+    .info-wrapper {
+        gap: 50px;
     }
 
     .main-section .wrapper {
@@ -243,9 +253,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .main-section .wrapper {
+        gap: 60px;
+    }
+
+    .about-section .wrapper, 
     .info-wrapper {
         flex-direction: column;
-        gap: 60px;
+        gap: 40px;
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
     }
 }
@@ -259,7 +274,7 @@ footer {
     }
 
     .main-section .wrapper {
-        gap: 60px;
+        gap: 40px;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 
