@@ -228,13 +228,13 @@ footer {
     .about-section .wrapper,
     .info-wrapper {
         display: flex;
-        gap: 50px;
+        gap: 60px !important;
     }
 
     .main-section .wrapper {
         flex-direction: column-reverse;
         align-items: flex-start;
-        gap: 50px;
+        gap: 60px !important;
         /* 📍 Свойства для расположения элементов и отступа между ними */
     }
 
@@ -255,14 +255,15 @@ footer {
 
 @media screen and (max-width: 768px) {
     .main-section .wrapper {
-        gap: 40px;
+        display: flex;
+        gap: 50px !important;
     }
 
     .about-section .wrapper, 
     .info-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 50px !important;
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
     }
 }
@@ -277,7 +278,7 @@ footer {
 
     .main-section .wrapper {
         display: flex;
-        gap: 40px;
+        gap: 40px !important;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 
@@ -289,7 +290,7 @@ footer {
     .about-section .wrapper,
     .info-wrapper {
         display: flex;
-        gap: 40px;
+        gap: 40px !important;
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 }
